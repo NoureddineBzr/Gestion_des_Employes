@@ -14,6 +14,7 @@ String log="";
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="employee.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -34,6 +35,8 @@ String log="";
 					<th>salary</th>
 					<th>job</th>
 					<th>department</th>
+					<th>Action</th>
+					
 						
 				</tr>
 				<%	
@@ -55,6 +58,13 @@ String log="";
 								<td><%=result.getString(6) %></td>
 								<td><%=result.getString(7) %></td>
 								<td><%=result.getString(8) %></td>
+								<td><%=result.getString(8) %></td>
+								<td>
+									<a href="Delete?employe_id=<%=result.getString(1) %>">Delete</a>
+									<a href="Update?employe_id=<%=result.getString(1) %>">Update</a>
+
+								</td>
+								
 							</tr>
 						
 						<% 

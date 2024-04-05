@@ -11,18 +11,19 @@ String log="";
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="addEmployee.css">
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-	<div align="right">
+	<div align="right" class="Logout">
 		Bonjour <%=log %> <br>
 		<a href="logOut">Logout</a>
 		
 	</div>
 	<div>
 		<h1>Add an Employee</h1>
-		<form action="Add" method="POST">
+		<form action="add" method="POST">
 		    <label for="first_name">First Name:</label><br>
 		    <input type="text" id="first_name" name="first_name" required><br><br>
 		
